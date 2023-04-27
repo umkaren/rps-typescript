@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock, Paper, Scissors</title>
+    <!-- My external CSS sheet -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+</head>
+<body>
+    <div class="titleSection">
+        <h1>Rock, Paper, Scissors</h1>
+    </div>
+    <div class="handSelection">
+        <h3>Choose your hand:</h3>
+        <div class="buttonSection">
+            <div class="handCard">
+                <div class="handImage">
+                    <img src="rock.png">
+                </div>
+                <div class="handButton">
+                    <button onclick="play('rock')" class="hover">Rock</button>
+                </div>
+            </div>
+	        <div class="handCard">
+                <div class="handImage">
+                    <img src="paper.png">
+                </div>
+                <div class="handButton">
+                <button onclick="play('paper')" class="hover">Paper</button>
+                </div>
+            </div>
+            <div class="handCard">
+                <div class="handImage">
+                    <img src="scissors.png">
+                </div>
+                <div class="handButton">
+	            <button onclick="play('scissors')" class ="hover">Scissors</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="resultSection">
+        <h3>Result:</h3>
+	    <p id="result"></p>
+	<div class="scoreSection">
+        <div class="playerScoreSection">
+            <p>Player Score: <span id="playerScore">0</span></p>
+        </div>
+        <div class="NPCScoreSection">
+	    <p>NPC Score: <span id="NPCScore">0</span></p>
+        </div>
+    </div>
+    </div>
+    <script src="rps.js"></script>
+</body>
+</html>
